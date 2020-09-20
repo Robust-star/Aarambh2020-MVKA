@@ -81,3 +81,114 @@ a:focus {
     height:90%;
     background-position: center;
 }
+
+/* COvID data */
+.bg-primary {
+    background-color: BLACK;
+}
+.text-faded {
+    color: rgba(245,245,245,0.7);
+}
+
+.text-dark {
+    color: #111;
+}
+
+.text-primary {
+    color: #e05626;
+}
+#one .container .row div>span{
+  font-size: 10px;
+
+}
+
+#viewbtn{
+  margin-top: 30px;
+}
+
+.bg-primary .col-lg-12{
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 20px;
+
+}
+
+/* BUTTONS */
+.btn-default {
+    border-color: #fff;
+    color: #222;
+    background-color: #fff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+    border-color: #ededed;
+    color: #222;
+    background-color: #f2f2f2;
+    opacity: 0.7;
+}
+
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+    background-image: none;
+}
+
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled].focus,
+fieldset[disabled] .btn-default.focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+    border-color: #fff;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+.btn-default .badge {
+    color: #fff;
+    background-color: #222;
+}
+
+.btn.btn-primary {
+    background-color: transparent;
+    border:1px solid #f0f0f0;
+    border-color:#f0f0f0;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.btn.btn-primary:hover {
+    opacity: 0.7;
+}
+
+.btn {
+    border: 0;
+    border-radius: 290px;
+    font-family: 'Helvetica Neue',Arial,sans-serif;
+}
+
+.btn-xl {
+    padding: 15px 30px;
+    font-size: 20px;
+}
