@@ -204,6 +204,42 @@ fieldset[disabled] .btn-default.active {
     font-size: 20px;
 }
 
+/* FROM Doctors */
+#four{
+  margin-bottom: 30px;
+  padding: 20px;
+}
+#post{
+  float: left;
+  margin-left: 50px;
+}
+.beds{
+  float: right;
+  margin-right: 10%;
+  text-align:center;
+}
+
+@media (max-width:992px) {
+    .beds {
+        clear: left;
+        margin-right: 30%;
+        margin-top:40px;
+    }
+    #post{
+      clear: both;
+      margin-left: 30%;
+    }
+}
+@media (max-width:769px) {
+    #post{
+      clear: right;
+      width: 50%;
+    }
+}
+#four > div > div.beds > div:nth-child(n){
+  margin-bottom: 30px;
+}
+
 /* FOOTER */
 footer {
     background-color:#222;
@@ -212,6 +248,8 @@ footer {
 footer h4{
   color:white;
 }
+
+
 
 button{
   border-radius: 20px;
