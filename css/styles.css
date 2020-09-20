@@ -28,6 +28,10 @@ a:focus {
     outline: 0;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
+}
+
 
 .navbar-default {
     border-color: rgba(35,35,35,.05);
@@ -85,6 +89,7 @@ a:focus {
 /* COvID data */
 .bg-primary {
     background-color: BLACK;
+
 }
 .text-faded {
     color: rgba(245,245,245,0.7);
@@ -106,6 +111,7 @@ a:focus {
 
 #viewbtn{
   margin-top: 30px;
+  text-align: center;
 }
 
 .bg-primary .col-lg-12{
@@ -196,4 +202,37 @@ fieldset[disabled] .btn-default.active {
 .btn-xl {
     padding: 15px 30px;
     font-size: 20px;
+}
+
+/* FOOTER */
+footer {
+    background-color:#222;
+}
+
+footer h4{
+  color:white;
+}
+
+button{
+  border-radius: 20px;
+  width: auto;
+}
+
+#footer > div > div > div:nth-child(1) > span:nth-child(n){
+  color: #E05626;
+  font-size: 17px;
+}
+#footer > div > div > div:nth-child(2) > span{
+  color: #E05626;
+  font-size: 18px;
+  font-weight: bold;
+}
+#footer > div > div > div:nth-child(n) > h4{
+  font-size: 25px;
+}
+#footer > div > div > div:nth-child(2) > button{
+  margin-top: 10px
+}
+#footer > div > div > div.col-xs-12.col-sm-3.text-right > ul > li:nth-child(n) > a > i{
+  font-size: 40px;
 }
