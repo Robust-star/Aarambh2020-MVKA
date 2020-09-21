@@ -26,7 +26,11 @@ ul {
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
+    border: 2px solid;
+    color: orange;
+    /* width: 32px; */
+    font-size: 37px;
 }
 
 .btn {
