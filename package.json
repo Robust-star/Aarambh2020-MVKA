@@ -1,0 +1,21 @@
+{
+  "name": "mksv",
+  "version": "1.0.0",
+  "description": "signin",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "raj",
+  "license": "ISC",
+  "dependencies": {
+    "connect-mongo": "^3.0.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "moment": "^2.27.0",
+    "mongoose": "^5.9.25",
+    "socket.io": "^2.3.0"
+  }
+}
