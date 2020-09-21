@@ -45,9 +45,9 @@ router.get('/register', function (req, res, next) {
 
 //end===================================
 // doct===================
-router.get('/doct', function (req, res, next) {
-	return res.render('doctor.ejs');
-});
+// router.get('/doct', function (req, res, next) {
+// 	return res.render('doctor.ejs');
+// });
 //==================
 //request================db data/////////
 
@@ -78,7 +78,13 @@ router.post('/', function(req, res, next) {
 							email:personInfo.email,
 							username: personInfo.username,
 							password: personInfo.password,
-							passwordConf: personInfo.passwordConf
+							passwordConf: personInfo.passwordConf,
+							gender:personInfo.gender,
+							special:personInfo.special,
+							degree:personInfo.degree,
+							mobile:personInfo.mobile
+							
+
 						});
 
 						newPerson.save(function(err, Person){
@@ -141,10 +147,27 @@ router.get('/profile', function (req, res, next) {
 			res.redirect('/');
 		}else{
 			//console.log("found");
-			return res.render('p1.ejs', {"name":data.username,"email":data.email});
+			return res.render('p1.ejs',);
 		}
 	});
 });
+// =================daksahab================
+router.get('/doct', function (req, res, next) {
+	console.log("doct");
+	User.findOne({unique_id:req.session.userId},function(err,data){
+		console.log("data");
+		console.log(data.mobile);
+		console.log(data.gender);
+		if(!data){
+			res.redirect('/profile');
+		}else{
+			//console.log("found");
+			return res.render('doctor.ejs', {"username":data.username,"email":data.email,"gender":data.gender,"mobile":data.mobile,"degree":data.degree,"special":data.special});
+		}
+	});
+});
+
+
 
 // profile=====================end======
 
