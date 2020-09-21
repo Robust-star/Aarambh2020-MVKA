@@ -11,23 +11,23 @@ This website can help connect people, in times of such pandemics.
 
 # Technology
 ## Frontend
-HTML
-CSS
-JAVASCRIPT
-BOOTSTRAP
+- HTML
+- CSS
+- JAVASCRIPT
+- BOOTSTRAP
 
 ## Backend
-Node.js
-Mongodb
-Express.js
-Socket.io
-REST API'S
+- Node.js
+- Mongodb
+- Express.js
+- Socket.io
+- REST API'S
 
 # Installation
-npm install
-npm install mongodb
-npm install socket.io
-npm install request
-npm install nodemon
-npm install express
-npm install ejs
+- npm install
+- npm install mongodb
+- npm install socket.io
+- npm install request
+- npm install nodemon
+- npm install express
+- npm install ejs
