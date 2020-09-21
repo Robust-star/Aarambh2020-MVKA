@@ -310,3 +310,121 @@ margin-top: 80px;
 .is-active,.is-deceased{
   float:right;
 }
+/******About Us Content*********/
+
+/*.aboutus-body {
+    background-color: #FAAA7740;
+}*/
+
+.heading{
+  font-size: 4em;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+font-family: 'Quintessential', cursive;
+
+
+}
+.about-image-content {
+  position: relative;
+  min-height: auto;
+  text-align: center;
+  margin-bottom: 30px;
+  border:solid,bold;
+  height:60%;
+  background-position: center;
+}
+.health{
+  font-size: 2em;
+  font-family: 'Dancing Script', cursive;
+font-family: 'Quintessential', cursive;
+}
+
+.health-contents{
+  font-size: 2em;
+  text-align:center;
+ font-family: 'Dancing Script', cursive;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+
+
+.team{
+  color: BLACK;
+  text-align: center;
+  font-size: 4em;
+  margin-top: 10px;
+  font-weight: bold;
+  text-decoration: underline;
+  font-family: 'Dancing Script', cursive;
+font-family: 'Quintessential', cursive;
+
+}
+
+.name{
+text-align: center;
+margin-top: 0px;
+margin-bottom: 0px;
+font-family: "archia";
+font-size:3em;
+font-weight: bold;
+color: BLACK;
+
+}
+
+.post{
+  text-align: center;
+margin-top: 0px;
+margin-bottom: 10px;
+font-family: "archia";
+font-size:3em;
+font-weight: bold;
+color: BLACK;
+}
+.team-img{
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+transition: 0.3s;
+width:70%;
+font-size: 3em;
+border: solid,BLACK;
+border-radius: 15px;
+margin-left: 50px;
+margin-right: 5px;
+margin-top: 50px;
+}
+.thumbnail,.rounded{
+  border-radius: 15px;
+}
+/********end of about us********/
+
+/******doctor********/
+.img-responsive{
+  margin-top: 30px;
+}
+.doctor-details{
+  text-align: center;
+  font-size: 1.6em;
+}
+.hr{
+  background-color: BLACK;
+  color: BLACK;
+}
+.pp{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+.pp:hover,.pp:focus,.pp:active{
+  border-color: #ededed;
+  color: #222;
+  background-color: #f2f2f2;
+  box-shadow: GREEN;
+  background-color: transparent;
+  border:1px solid #f0f0f0;
+  border-color:#f0f0f0;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+  border-radius: 50%;
+}

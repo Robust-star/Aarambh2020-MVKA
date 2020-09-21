@@ -44,7 +44,11 @@ router.get('/register', function (req, res, next) {
 });
 
 //end===================================
-
+// doct===================
+router.get('/doct', function (req, res, next) {
+	return res.render('doctor.ejs');
+});
+//==================
 //request================db data/////////
 
 router.post('/', function(req, res, next) {
