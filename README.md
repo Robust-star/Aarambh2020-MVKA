@@ -31,3 +31,4 @@ This website can help connect people, in times of such pandemics.
 - npm install nodemon
 - npm install express
 - npm install ejs
+for more installation visit to the package.json file and install all the dev dependencies
