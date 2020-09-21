@@ -1,7 +1,7 @@
 var express = require('express');
 const https = require('https');
 var router = express.Router();
-
+const request=require('request');
 // user db=======================
 var User = require('../models/user');
 
@@ -9,11 +9,30 @@ var User = require('../models/user');
 // user db end====================
 
 // home render===============
+var d = new Date(); // Today!
+d.setDate(d.getDate() - 1);
+var baseurl = "https://api.covid19api.com/country/india?";
+var to = "to="+d;
+d.setDate(d.getDate() - 1);
+var from = "from="+d+"&";
+var urlfinal = baseurl + from + to;
+var c
+request(urlfinal, function (error, response, body) {
+	if (!error && response.statusCode == 200) {
+		   c = JSON.parse(body);
+		   router.get('/', function (req, res, next) {
+			   return res.render('index1.ejs',{'death':c[(c.length)-1].Deaths,'confirmed':c[(c.length)-1].Confirmed,'recovered':c[(c.length)-1].Recovered,'active':c[(c.length)-1].Active});
+		   });
+	}
+	  console.log(c[(c.length)-1].Confirmed);
+  });
+
+
 
 // 
-router.get('/', function (req, res, next) {
-	return res.render('index1.ejs');
-});
+// router.get('/', function (req, res, next) {
+// 	return res.render('index1.ejs');
+// });
 
 //home render end =================
 
