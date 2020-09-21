@@ -282,3 +282,31 @@ button{
   color:#e05626;
   font-weight: bold;
 }
+/* content */
+
+.Level{
+  width: 100%;
+}
+.level-item{
+-webkit-tap-highlight-color: transparent;
+font-family: "archia";
+animation-duration: .45s;
+animation-fill-mode: both;
+animation-name: fadeInUp;
+display: flex;
+flex-direction: column;
+width: 15%;
+margin-left: 100px;
+margin-right: 100px;
+
+}
+.is-recovered, .is-deceased{
+margin-top: 80px;
+}
+.is-confirmed,.is-recovered{
+  float: left;
+  clear: right;
+}
+.is-active,.is-deceased{
+  float:right;
+}
