@@ -1,19 +1,23 @@
 var express = require('express');
+const https = require('https');
 var router = express.Router();
 
 // user db=======================
-
 var User = require('../models/user');
+
 
 // user db end====================
 
 // home render===============
 
+// 
 router.get('/', function (req, res, next) {
 	return res.render('index1.ejs');
 });
 
 //home render end =================
+
+// data======================
 
 //for login===========================
 router.get('/register', function (req, res, next) {
@@ -118,6 +122,67 @@ router.get('/profile', function (req, res, next) {
 		}
 	});
 });
+
+// profile=====================end======
+
+
+// router.get('/profile/chat', function (req, res, next) {
+// 	return res.render('chat.ejs');
+// });
+
+// logout================================
+
+
+router.get('/logout', function (req, res, next) {
+	console.log("logout")
+	if (req.session) {
+    // delete session object
+    req.session.destroy(function (err) {
+    	if (err) {
+    		return next(err);
+    	} else {
+    		return res.redirect('/');
+    	}
+    });
+}
+});
+
+// logut end================================
+
+// forget  ==========================
+
+router.get('/forgetpass', function (req, res, next) {
+	res.render("forget.ejs");
+});
+
+router.post('/forgetpass', function (req, res, next) {
+	//console.log('req.body');
+	//console.log(req.body);
+	User.findOne({email:req.body.email},function(err,data){
+		console.log(data);
+		if(!data){
+			res.send({"Success":"This Email Is not regestered!"});
+		}else{
+			// res.send({"Success":"Success!"});
+			if (req.body.password==req.body.passwordConf) {
+			data.password=req.body.password;
+			data.passwordConf=req.body.passwordConf;
+
+			data.save(function(err, Person){
+				if(err)
+					console.log(err);
+				else
+					console.log('Success');
+					res.send({"Success":"Password changed!"});
+			});
+		}else{
+			res.send({"Success":"Password does not matched! Both Password should be same."});
+		}
+		}
+	});
+	
+});
+// forget end ================================================
 
 // export==========================
 
