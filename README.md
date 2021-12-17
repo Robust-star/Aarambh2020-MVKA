@@ -21,7 +21,7 @@ This website can help connect people, in times of such pandemics.
 - Mongodb
 - Express.js
 - Socket.io
-- REST API'S
+- REST API
 
 # Installation
 - npm install
